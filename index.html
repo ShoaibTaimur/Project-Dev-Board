@@ -51,37 +51,179 @@
 
         <!-- Main Card Section -->
         <section class="flex flex-col">
+
+
             <!-- Top Section -->
             <div class="flex justify-center flex-wrap gap-[24px]">
                 <!-- Task Assigned -->
-                <div class="order-1 md:order-none bg-[#F4F7FF] p-[10px] xl:p-[32px] rounded-2xl flex justify-center flex-[1_1] gap-[20px]">
+                <div
+                    class="order-1 md:order-none bg-[#F4F7FF] p-[10px] xl:p-[32px] rounded-2xl flex justify-center flex-[1_1] gap-[20px]">
                     <div class="flex items-center">
-                        <img class="rounded-full lg:border-[5px] xl:border-[10px] border-white" src="assets/checkbox.png" alt="">
+                        <img class="rounded-full lg:border-[5px] xl:border-[10px] border-white"
+                            src="assets/checkbox.png" alt="">
                     </div>
                     <div class="flex flex-col justify-center">
-                        <h1 class="lg:text-[12px] xl:text-[16px] text-[rgba(0,48,60,1)] font-medium md:hidden lg:block">Task Assigned</h1>
+                        <h1 class="lg:text-[12px] xl:text-[16px] text-[rgba(0,48,60,1)] font-medium md:hidden lg:block">
+                            Task Assigned</h1>
                         <p class="lg:text-[20px] xl:text-[32px] font-bold">05</p>
                     </div>
                 </div>
 
                 <!-- Discover Something new today -->
-                <div class="order-3 md:order-none flex flex-[1_1] gap-[10px] sm:gap-[22px] px-[10px] py-[10px] lg:px-[40px] lg:py-[20px] items-center justify-center bg-linear-to-br from-[#3752FD] to-[#9BA8F8] rounded-2xl">
+                <div
+                    class="order-3 md:order-none flex flex-[1_1] gap-[10px] sm:gap-[22px] px-[10px] py-[10px] lg:px-[40px] lg:py-[20px] items-center justify-center bg-linear-to-br from-[#3752FD] to-[#9BA8F8] rounded-2xl">
                     <img class="w-[50px] sm:w-[60px]" src="assets/board.png" alt="">
-                    <h1 class="text-[18px] xl:text-[24px] text-white font-medium sm:w-[298px]">Discover Something New Today!</h1>
+                    <h1 class="text-[18px] xl:text-[24px] text-white font-medium sm:w-[298px]">Discover Something New
+                        Today!</h1>
                 </div>
 
                 <!-- Date -->
-                <div class="order-2 md:order-none bg-[#F4F7FF] p-[20px] lg:p-[32px] rounded-2xl flex flex-[1_1] items-center justify-center gap-[20px]">
+                <div
+                    class="order-2 md:order-none bg-[#F4F7FF] p-[20px] lg:p-[32px] rounded-2xl flex flex-[1_1] items-center justify-center gap-[20px]">
                     <div class="flex items-center">
-                        <img class="lg:w-[100px] md:hidden lg:block rounded-full xl:border-[10px] border-white" src="assets/calender.png" alt="">
+                        <img class="lg:w-[50px] md:hidden lg:block rounded-full xl:border-[10px] border-white"
+                            src="assets/calender.png" alt="">
                     </div>
                     <div id="todayDate">
-                        
+
                     </div>
                 </div>
             </div>
-            <div>
 
+            <!-- Dashed line -->
+            <div class="mt-8 mb-8 bg-white border-t-4 border-dashed border-[#F4F7FF]">
+            </div>
+
+
+            <!-- Bottom Section/ Main Section -->
+            <div class="flex flex-wrap gap-[34px]">
+                <!-- Card 1 -->
+                <div class="card-1 flex-[1_1_400px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="flex flex-col gap-[16px]">
+                        <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
+                            ShopEase</p>
+                        <h1 class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Fix Mobile Button Issue </h1>
+                        <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span class="opacity-50">Debug using Chrome
+                                DevTools, check for overlapping elements, and ensure onClick works
+                                properly
+                                and ensure onClick works properly</span></p>
+                    </div>
+                    <div class="mt-4 mb-4 border-t-4 border-dashed border-[#dde5fd]">
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-between">
+                        <div class="flex flex-col items-center">
+                            <p class="text-[14px] text-[rgba(0,48,60,1)]">Deadline</p>
+                            <h1 class="text-[16px] font-medium">21 March 2025</h1>
+                        </div>
+                        <button id="card-6-btn"
+                            class="btn btn-soft btn-primary px-[20px] py-[10px] text-[16px] font-medium rounded-xl">Completed</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card-2 flex-[1_1_400px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="flex flex-col gap-[16px]">
+                        <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
+                            CloudSync</p>
+                        <h1 class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Add Dark Mode</h1>
+                        <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span class="opacity-50">Store the user's
+                                preference in localStorage, update CSS variables dynamically, and apply a smooth
+                                transition effect.</span></p>
+                    </div>
+                    <div class="mt-4 mb-4 border-t-4 border-dashed border-[#dde5fd]">
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-between">
+                        <div class="flex flex-col items-center">
+                            <p class="text-[14px] text-[rgba(0,48,60,1)]">Deadline</p>
+                            <h1 class="text-[16px] font-medium">21 March 2025</h1>
+                        </div>
+                        <button id="card-2-btn"
+                            class="btn btn-soft btn-primary px-[20px] py-[10px] text-[16px] font-medium rounded-xl">Completed</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card-3 flex-[1_1_400px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="flex flex-col gap-[16px]">
+                        <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
+                            SwiftPay</p>
+                        <h1 class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Optimize Home page</h1>
+                        <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span class="opacity-50">Debug using Chrome
+                                DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</span></p>
+                    </div>
+                    <div class="mt-4 mb-4 border-t-4 border-dashed border-[#dde5fd]">
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-between">
+                        <div class="flex flex-col items-center">
+                            <p class="text-[14px] text-[rgba(0,48,60,1)]">Deadline</p>
+                            <h1 class="text-[16px] font-medium">21 March 2025</h1>
+                        </div>
+                        <button id="card-3-btn"
+                            class="btn btn-soft btn-primary px-[20px] py-[10px] text-[16px] font-medium rounded-xl">Completed</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card-4 flex-[1_1_400px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="flex flex-col gap-[16px]">
+                        <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
+                            Meta</p>
+                        <h1 class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Add new emoji 🤲</h1>
+                        <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span class="opacity-50">Debug using Chrome
+                                DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</span></p>
+                    </div>
+                    <div class="mt-4 mb-4 border-t-4 border-dashed border-[#dde5fd]">
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-between">
+                        <div class="flex flex-col items-center">
+                            <p class="text-[14px] text-[rgba(0,48,60,1)]">Deadline</p>
+                            <h1 class="text-[16px] font-medium">21 March 2025</h1>
+                        </div>
+                        <button id="card-4-btn"
+                            class="btn btn-soft btn-primary px-[20px] py-[10px] text-[16px] font-medium rounded-xl">Completed</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card-5 flex-[1_1_400px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="flex flex-col gap-[16px]">
+                        <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
+                            Google LLC</p>
+                        <h1 class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Integrate OpenAI API</h1>
+                        <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span class="opacity-50">Debug using Chrome
+                                DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</span></p>
+                    </div>
+                    <div class="mt-4 mb-4 border-t-4 border-dashed border-[#dde5fd]">
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-between">
+                        <div class="flex flex-col items-center">
+                            <p class="text-[14px] text-[rgba(0,48,60,1)]">Deadline</p>
+                            <h1 class="text-[16px] font-medium">21 March 2025</h1>
+                        </div>
+                        <button id="card-5-btn"
+                            class="btn btn-soft btn-primary px-[20px] py-[10px] text-[16px] font-medium rounded-xl">Completed</button>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card-6 flex-[1_1_400px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="flex flex-col gap-[16px]">
+                        <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
+                            Glassdoar</p>
+                        <h1 class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Improve Job searching</h1>
+                        <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span class="opacity-50">Debug using Chrome
+                                DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</span></p>
+                    </div>
+                    <div class="mt-4 mb-4 border-t-4 border-dashed border-[#dde5fd]">
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-between">
+                        <div class="flex flex-col items-center">
+                            <p class="text-[14px] text-[rgba(0,48,60,1)]">Deadline</p>
+                            <h1 class="text-[16px] font-medium">21 March 2025</h1>
+                        </div>
+                        <button id="card-6-btn"
+                            class="btn btn-soft btn-primary px-[20px] py-[10px] text-[16px] font-medium rounded-xl">Completed</button>
+                    </div>
+                </div>
             </div>
         </section>
 
