@@ -14,6 +14,9 @@
     <title>DevBoard</title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <style>
+        :root{
+            --main-color: 244 247 255;
+        }
         .poppins {
             font-family: "Poppins", sans-serif;
         }
@@ -63,7 +66,7 @@
 </head>
 
 <body>
-    <div class="poppins bg-[#F4F7FF] px-[40px] lg:px-[80px] xl:px-[140px] pt-[21px] pb-[60px] space-y-5 ">
+    <div class="poppins bg-[rgb(var(--main-color))] px-[40px] lg:px-[80px] xl:px-[140px] pt-[21px] pb-[60px] space-y-5 ">
         <header class="bg-white rounded-3xl p-[24px]">
             <nav class="flex flex-wrap items-center justify-center gap-[10px] sm:justify-between">
 
@@ -79,11 +82,11 @@
                 <!-- CheckBox and Color change -->
                 <div class="flex gap-[110px] sm:gap-[16px]">
                     <div
-                        class="flex justify-center items-center gap-[15px] rounded-[32px] bg-[#F4F7FF] p-[10px] sm:p-[16px]">
+                        class="flex justify-center items-center gap-[15px] rounded-[32px] bg-[rgb(var(--main-color))] p-[10px] sm:p-[16px]">
                         <img class="sm:w-[32px] sm:h-[32px]" src="assets/checkbox.png" alt="">
                         <p id="task-done" class="text-[25px] sm:text-[32px] font-bold">23</p>
                     </div>
-                    <div class=" flex items-center justify-center rounded-full bg-[#F4F7FF] p-[10px] sm:p-[16px]">
+                    <div id="colorChange" class=" flex items-center justify-center rounded-full bg-[rgb(var(--main-color))] p-[10px] sm:p-[16px]">
                         <img class="sm:w-[40px] sm:h-[40px]" src="assets/theme-btn.png" alt="">
                     </div>
                 </div>
@@ -99,7 +102,7 @@
                 <div class="flex justify-center flex-wrap gap-[24px]">
                     <!-- Task Assigned -->
                     <div
-                        class="order-1 md:order-none bg-[#F4F7FF] p-[10px] xl:p-[32px] rounded-2xl flex justify-center flex-[1_1] gap-[20px]">
+                        class="order-1 md:order-none bg-[rgb(var(--main-color))] p-[10px] xl:p-[32px] rounded-2xl flex justify-center flex-[1_1] gap-[20px]">
                         <div class="flex items-center">
                             <img class="rounded-full lg:border-[5px] xl:border-[10px] border-white"
                                 src="assets/checkbox.png" alt="">
@@ -123,7 +126,7 @@
 
                     <!-- Date -->
                     <div
-                        class="order-2 md:order-none bg-[#F4F7FF] p-[20px] lg:p-[32px] rounded-2xl flex flex-[1_1] items-center justify-center gap-[20px]">
+                        class="order-2 md:order-none bg-[rgb(var(--main-color))] p-[20px] lg:p-[32px] rounded-2xl flex flex-[1_1] items-center justify-center gap-[20px]">
                         <div class="flex items-center">
                             <img class="lg:w-[50px] md:hidden lg:block rounded-full xl:border-[10px] border-white"
                                 src="assets/calender.png" alt="">
@@ -142,7 +145,7 @@
                 <!-- Bottom Section/ Main Section -->
                 <div class="flex flex-wrap gap-[34px]">
                     <!-- Card 1 -->
-                    <div class="card-1 flex-[1_1_300px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="card-1 flex-[1_1_300px] bg-[rgb(var(--main-color))] p-[24px] rounded-2xl">
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 ShopEase</p>
@@ -166,7 +169,7 @@
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="card-2 flex-[1_1_300px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="card-2 flex-[1_1_300px] bg-[rgb(var(--main-color))] p-[24px] rounded-2xl">
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 CloudSync</p>
@@ -188,7 +191,7 @@
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="card-3 flex-[1_1_300px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="card-3 flex-[1_1_300px] bg-[rgb(var(--main-color))] p-[24px] rounded-2xl">
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 SwiftPay</p>
@@ -211,7 +214,7 @@
                         </div>
                     </div>
                     <!-- Card 4 -->
-                    <div class="card-4 flex-[1_1_300px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="card-4 flex-[1_1_300px] bg-[rgb(var(--main-color))] p-[24px] rounded-2xl">
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 Meta</p>
@@ -234,7 +237,7 @@
                         </div>
                     </div>
                     <!-- Card 5 -->
-                    <div class="card-5 flex-[1_1_300px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="card-5 flex-[1_1_300px] bg-[rgb(var(--main-color))] p-[24px] rounded-2xl">
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 Google LLC</p>
@@ -258,7 +261,7 @@
                         </div>
                     </div>
                     <!-- Card 6 -->
-                    <div class="card-6 flex-[1_1_300px] bg-[#F4F7FF] p-[24px] rounded-2xl">
+                    <div class="card-6 flex-[1_1_300px] bg-[rgb(var(--main-color))] p-[24px] rounded-2xl">
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 Glassdoar</p>

@@ -11,7 +11,7 @@ function counterUpdate(id, counter, remaining, cardtitle, activityLog) {
         const p = document.createElement('p');
         p.innerText = `You have completed ${cardTitle} at ${time}`;
 
-        p.classList.add("bg-[#F4F7FF]", "rounded-2xl", "p-4", "text-[16px]", "text-[#4e4e4e]", "mb-[10px]");
+        p.classList.add("bg-[rgb(var(--main-color))]", "rounded-2xl", "p-4", "text-[16px]", "text-[#4e4e4e]", "mb-[10px]");
         div.appendChild(p);
 
         const convertedCount = parseInt(count);
