@@ -18,4 +18,7 @@ counterUpdate('card-3-btn','task-done','task-assigned','card-3-title','activity-
 counterUpdate('card-4-btn','task-done','task-assigned','card-4-title','activity-log');
 counterUpdate('card-5-btn','task-done','task-assigned','card-5-title','activity-log');
 counterUpdate('card-6-btn','task-done','task-assigned','card-6-title','activity-log');
+document.getElementById('activity-log-btn').addEventListener('click',function(){
+    document.getElementById('activity-log').innerText="";
+})
 
