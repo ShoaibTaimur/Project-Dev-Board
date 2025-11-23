@@ -52,7 +52,6 @@ const formContainer = document.getElementById("task-form-container");
 addTaskBtn.addEventListener("click", function () {
     formContainer.classList.toggle("hidden");
 
-    // Optional: Change button text when toggled
     if (formContainer.classList.contains("hidden")) {
         addTaskBtn.innerText = "Add New Task";
     } else {
@@ -65,7 +64,6 @@ addTaskBtn.addEventListener("click", function () {
 const form = document.getElementById("loginForm");
 const cardsContainer = document.getElementById("cards-container");
 
-// you already have 6 static cards
 let cardCount = 6;
 
 form.addEventListener("submit", function (e) {
