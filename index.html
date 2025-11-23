@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +15,10 @@
     <title>DevBoard</title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <style>
-        :root{
+        :root {
             --main-color: 244 247 255;
         }
+
         .poppins {
             font-family: "Poppins", sans-serif;
         }
@@ -66,7 +68,8 @@
 </head>
 
 <body>
-    <div class="poppins bg-[rgb(var(--main-color))] px-[40px] lg:px-[80px] xl:px-[140px] pt-[21px] pb-[60px] space-y-5 ">
+    <div
+        class="poppins bg-[rgb(var(--main-color))] px-[40px] lg:px-[80px] xl:px-[140px] pt-[21px] pb-[60px] space-y-5 ">
         <header class="bg-white rounded-3xl p-[24px]">
             <nav class="flex flex-wrap items-center justify-center gap-[10px] sm:justify-between">
 
@@ -86,7 +89,8 @@
                         <img class="sm:w-[32px] sm:h-[32px]" src="assets/checkbox.png" alt="">
                         <p id="task-done" class="text-[25px] sm:text-[32px] font-bold">23</p>
                     </div>
-                    <div id="colorChange" class=" flex items-center justify-center rounded-full bg-[rgb(var(--main-color))] p-[10px] sm:p-[16px]">
+                    <div id="colorChange"
+                        class=" flex items-center justify-center rounded-full bg-[rgb(var(--main-color))] p-[10px] sm:p-[16px]">
                         <img class="sm:w-[40px] sm:h-[40px]" src="assets/theme-btn.png" alt="">
                     </div>
                 </div>
@@ -141,15 +145,49 @@
                 <div class="mt-8 mb-8 bg-white border-t-4 border-dashed border-[#F4F7FF]">
                 </div>
 
+                <!-- New task add -->
+                <div class="flex flex-col justify-center items-center mb-5">
+                    <button id="new-task-btn"
+                        class="btn btn-soft btn-primary w-[180px] px-[20px] py-[10px] mb-5 text-[12px] sm:text-[16px] font-medium rounded-xl">Add
+                        New Task</button>
+                    <div class="bg-[rgb(var(--main-color))] p-5 rounded-2xl hidden" id="task-form-container">
+                        <form id="loginForm" class="space-y-3">
+                            <fieldset class="fieldset">
+
+                                <label class="label">Company Name</label>
+                                <input type="text" name="companyName" class="input" placeholder="Input name" required />
+
+                                <label class="label">Title</label>
+                                <input type="text" name="title" class="input" placeholder="Title" required />
+
+                                <label class="label">Description</label>
+                                <input type="text" name="description" class="input" placeholder="Description"
+                                    required />
+
+                                <label class="label">Deadline</label>
+                                <input type="text" name="deadline" class="input" placeholder="Deadline" required />
+
+                                <button type="submit" id="submit-btn"
+                                    class="btn btn-soft btn-primary px-[20px] mt-3 py-[10px] text-[12px] sm:text-[16px] font-medium rounded-xl">
+                                    Submit
+                                </button>
+
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+
 
                 <!-- Bottom Section/ Main Section -->
-                <div class="flex flex-wrap gap-[34px]">
+                <div id="cards-container" class="flex flex-wrap gap-[34px]">
                     <!-- Card 1 -->
                     <div class="card-1 flex-[1_1_300px] bg-[rgb(var(--main-color))] p-[24px] rounded-2xl">
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 ShopEase</p>
-                            <h1 id="card-1-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Fix Mobile Button
+                            <h1 id="card-1-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">
+                                Fix Mobile Button
                                 Issue </h1>
                             <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span
                                     class="opacity-50">Debug using Chrome
@@ -173,7 +211,8 @@
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 CloudSync</p>
-                            <h1 id="card-2-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Add Dark Mode</h1>
+                            <h1 id="card-2-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">
+                                Add Dark Mode</h1>
                             <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span
                                     class="opacity-50">Store the user's
                                     preference in localStorage, update CSS variables dynamically, and apply a smooth
@@ -195,7 +234,8 @@
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 SwiftPay</p>
-                            <h1 id="card-3-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Optimize Home page
+                            <h1 id="card-3-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">
+                                Optimize Home page
                             </h1>
                             <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span
                                     class="opacity-50">Debug using Chrome
@@ -218,7 +258,8 @@
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 Meta</p>
-                            <h1 id="card-4-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Add new emoji 🤲
+                            <h1 id="card-4-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">
+                                Add new emoji 🤲
                             </h1>
                             <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span
                                     class="opacity-50">Debug using Chrome
@@ -241,7 +282,8 @@
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 Google LLC</p>
-                            <h1 id="card-5-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Integrate OpenAI
+                            <h1 id="card-5-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">
+                                Integrate OpenAI
                                 API
                             </h1>
                             <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span
@@ -265,7 +307,8 @@
                         <div class="flex flex-col gap-[16px]">
                             <p class="text-[16px] text-[rgba(0,48,60,1)] rounded-xl px-[16px] py-[8px] bg-white w-fit">
                                 Glassdoar</p>
-                            <h1 id="card-6-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">Improve Job
+                            <h1 id="card-6-title" class="text-[20px] sm:text-[24px] text-[rgba(0,48,60,1)] font-medium">
+                                Improve Job
                                 searching
                             </h1>
                             <p class="bg-white p-[16px] text-[12px] sm:text-[16px] rounded-xl"><span

@@ -23,5 +23,11 @@ function counterUpdate(id, counter, remaining, cardtitle, activityLog) {
         document.getElementById(counter).innerText = sum;
         document.getElementById(remaining).innerText = left;
 
+        Swal.fire({
+        title: "Done!",
+        text: "Task Completed Successfully!",
+        icon: "success"
+    });
+
     })
 }
