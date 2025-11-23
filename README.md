@@ -77,12 +77,9 @@ You can easily tweak this project to match your workflow:
 
 ## 🔮 Future Ideas
 
-* 🌙 Dark mode toggle(Added a theme button for only background color change)
-* 🧲 Drag-and-drop tasks (Kanban-style)
+* 🌙 Dark mode toggle (Added a theme button for only background color change)
 * 💾 Persist data using localStorage or a backend
-* ➕ Task creation form instead of hardcoded cards
-* 📊 Simple task statistics (total, completed, pending)
-
+* ➕ Task creation form instead of hardcoded cards (Done)
 ---
 
 ## 👤 Author
